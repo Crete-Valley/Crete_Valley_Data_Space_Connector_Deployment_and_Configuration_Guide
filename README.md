@@ -4,9 +4,8 @@
   [1.2 IDSA protocol core goals](#12-idsa-protocol-core-goals)</br>
   [1.3 IDSA key features and principles](#13-idsa-key-features-and-principles)</br>
 [2. Data Space within Crete Valley](#2-data-space-within-crete-valley)</br>
-   f[2.1 Crete Valley Middleware (IDSA Control Plane)](#21-crete-valley-middleware-idsa-control-plane)</br>
+   [2.1 Crete Valley Middleware (IDSA Control Plane)](#21-crete-valley-middleware-idsa-control-plane)</br>
    [2.2 Crete Valley Connector (IDSA Data Plane)](#22-crete-valley-connector-idsa-data-plane)</br>
-
 [3. Deployment and Configuration of the Crete Valley Connector Guide](#3-deployment-and-configuration-of-the-crete-valley-connector-guide)</br>
    [3.1 Prerequisites](#31-prerequisites)</br>
    [3.2 Deployment of the Crete Valley Connector](#32-deployment-of-the-crete-valley-connector)</br>
@@ -297,7 +296,7 @@ If you use any different domain naming conventions or internal network structure
 
 <img width="28" height="28" alt="image" src="https://github.com/user-attachments/assets/9e3b8c52-916d-49f7-aaa3-185665120868" /> After that you need to Log In to the Middleware and we recommend you to navigate to its functionality.
 
-<img width="859" height="458" alt="image" src="https://github.com/user-attachments/assets/a8aac87d-cb99-438f-85ce-8528519f1d81" />
+<img width="859" height="458" alt="Crete Valley Login" src="https://github.com/user-attachments/assets/76343f3e-ce66-4f35-addf-629d40249865" />
 
 </br>
 </br>
@@ -311,7 +310,8 @@ If you use any different domain naming conventions or internal network structure
 * Broker URL  : You just need to use on the Middleware UI, this local URL:  http://my-local-server.com:1026
 * Data APP    : You just need to use on the Middleware UI, this local URL:  https://be-dataapp-provider:8083
 
-<img width="959" height="603" alt="Connectors Settings_" src="https://github.com/user-attachments/assets/c6b322e5-6e59-4c4b-9158-23a642393f3d" />
+<img width="959" height="693" alt="Crete Valley Connector settings" src="https://github.com/user-attachments/assets/1c2a5c3d-3b2f-4d6c-86e9-a36a5c6c7d87" />
+
 
 </br>
 </br>
@@ -339,7 +339,7 @@ The user can have access in the API tools through the URL:
 
 </br>
 
-<img width="1352" height="637" alt="Log In   Authenticate Parameters" src="https://github.com/user-attachments/assets/ac5ad3bb-9145-44a9-8de7-ad6d0a2c6d87" />
+<img width="1361" height="610" alt="Swagger user login" src="https://github.com/user-attachments/assets/32289ee4-a6bc-4262-9477-81e7a378dee5" />
 
 </br>
 </br>
@@ -348,7 +348,7 @@ The user can have access in the API tools through the URL:
 
 </br>
 
-<img width="1582" height="597" alt="image" src="https://github.com/user-attachments/assets/4fc26810-630a-44ff-b0b1-f7ecf3003c5c" />
+<img width="1577" height="613" alt="Swagger user token" src="https://github.com/user-attachments/assets/5e9ac58b-0dbf-4f92-883b-e8782c0a459a" />
 
 </br>
 </br>
@@ -359,7 +359,7 @@ and proceeds to the Authorization, inserting the Authorization Token as shown be
 </br>
 </br>
 
-<img width="1360" height="702" alt="Authorize" src="https://github.com/user-attachments/assets/ceb48926-73d5-419b-8c59-4eed0adb34a6" />
+<img width="1367" height="667" alt="Swagger user token insertion" src="https://github.com/user-attachments/assets/e6a8bf65-a067-44a9-94bd-9fd128a7a8eb" />
 
 </br>
 </br>
@@ -370,7 +370,7 @@ and proceeds to the Authorization, inserting the Authorization Token as shown be
 
 </br>
 
-<img width="1371" height="622" alt="My offered services" src="https://github.com/user-attachments/assets/b1ad4ac5-19e1-48f4-8a43-9094b6b720c8" />
+<img width="1360" height="726" alt="Swagger offered services" src="https://github.com/user-attachments/assets/49a5c098-0e74-4858-a15b-819f5d938808" />
 
 </br>
 </br>
@@ -386,7 +386,7 @@ and proceeds to the Authorization, inserting the Authorization Token as shown be
 
 </br>
 
-<img width="1918" height="911" alt="Data Offering ID" src="https://github.com/user-attachments/assets/ec7fc0a8-046c-44dc-aca6-6643077f1568" />
+<img width="1918" height="863" alt="Data offering ID" src="https://github.com/user-attachments/assets/84ef803a-67f0-405b-aafe-b971dcc41010" />
 
 
 </br>
@@ -402,7 +402,7 @@ and proceeds to the Authorization, inserting the Authorization Token as shown be
 
 </br>
 
-<img width="1357" height="641" alt="Data Provide" src="https://github.com/user-attachments/assets/44d4c8f3-a413-48fd-a71f-ce450ea95cf1" />
+<img width="1352" height="612" alt="Swagger provide daata" src="https://github.com/user-attachments/assets/0282081a-7d4f-45e4-8091-bec089c31ebf" />
 
 
 </br>
@@ -423,7 +423,7 @@ The "Consume Data" page containing all the Data Entities that the user have rece
 
 </br>
 
-<img width="1918" height="907" alt="Consume Data" src="https://github.com/user-attachments/assets/c3baa975-5c0c-4a4a-8114-d515897ebfdc" />
+<img width="1905" height="867" alt="Swagger cosnsume data" src="https://github.com/user-attachments/assets/e4108549-5bd7-45f6-86f2-a02653c3d637" />
 
 
 </br>
@@ -432,7 +432,7 @@ The specific Data Entity that user wants to consume, and contains the ID of the 
 
 </br>
 
-<img width="1918" height="907" alt="Provided Data ID" src="https://github.com/user-attachments/assets/ada51f38-f22a-4440-9bdf-447ba36efaa4" />
+<img width="1905" height="867" alt="Swagger data entity" src="https://github.com/user-attachments/assets/0211f9e7-2ebc-4722-aac9-c609afcee127" />
 
 </br>
 </br>
@@ -442,7 +442,7 @@ The specific Data Entity that user wants to consume, and contains the ID of the 
 </br>
 </br>
 
-<img width="1352" height="326" alt="consme data" src="https://github.com/user-attachments/assets/ae60cda5-ae00-440f-9ee2-c086c5bbb2fe" />
+<img width="1353" height="297" alt="Swagger cosnsume data by id" src="https://github.com/user-attachments/assets/7421cbb2-adee-4b02-8dd0-6a63de52976a" />
 
 </br>
 </br>
