@@ -201,8 +201,7 @@ cd /crete-valley-connector/Crete Valley Connector Docker Files
 <img width="28" height="28" alt="image" src="https://github.com/user-attachments/assets/98bfc605-56a2-49a4-9948-f37e490b7a59" />   You need to connect in your local server through the <b>Command Prompt</b>, install Docker (the Docker application has to be downloaded and installed accordingly to the OS of the server to host the deployment) and the needed libraries as shown below:
 
 For the needed Libraries:
-
-    -For 64-bit version of CentOS type
+  *For 64-bit version of CentOS type
 
 ```
 $ sudo yum update
@@ -210,8 +209,26 @@ $ sudo yum install ca-certificates
 $ sudo yum install curl
 $ sudo yum install -y yum-utils
 ```
+    
+  *For 64-bit version of Ubuntu versions
 
-For the Docker
+```
+$ sudo apt update
+$ sudo apt install -y ca-certificates
+$ sudo apt install -y curl
+$ sudo apt install -y software-properties-common
+```
+  or
+```
+$ sudo apt-get update
+$ sudo apt-get install ca-certificates
+$ sudo apt-get curl 
+$ sudo apt-get software-properties-common 
+```
+
+</br>
+
+For the Docker:
 
 ```
 $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg
