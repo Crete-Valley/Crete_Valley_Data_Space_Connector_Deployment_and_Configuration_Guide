@@ -200,7 +200,9 @@ cd /crete-valley-connector/Crete Valley Connector Docker Files
 
 <img width="28" height="28" alt="image" src="https://github.com/user-attachments/assets/98bfc605-56a2-49a4-9948-f37e490b7a59" />   You need to connect in your local server through the <b>Command Prompt</b>, install Docker (the Docker application has to be downloaded and installed accordingly to the OS of the server to host the deployment) and the needed libraries as shown below:
 
-For the needed Libraries
+For the needed Libraries:
+
+    -For 64-bit version of CentOS type
 
 ```
 $ sudo yum update
