@@ -188,11 +188,23 @@ Crete Valley Connector software and its components will be delivered utilizing t
 <img width="28" height="28" alt="image" src="https://github.com/user-attachments/assets/ceb41791-d6b1-4f1c-ba2f-eff7f5320d8f" /> You need to upload the appropriate files ("Crete Valley Connector Docker Files" & .env) either directly through <b>Filezilla</b> or through the <b>Command Prompt</b>. 
 You can directly upload the folders&files or clone the folders&files of "Crete Valley Connector Docker Files":
 
+For 64-bit version of CentOS types:
+
 ```
 cd /crete-valley-connector/
 git clone https://github.com/Crete-Valley/Crete_Valley_Data_Space_Connector_Deployment_and_Configuration_Guide.git
 cd /crete-valley-connector/Crete Valley Connector Docker Files
 ```
+
+For 64-bit version of Ubuntu versions:
+
+```
+mkdir -p /crete-valley-connector && cd /crete-valley-connector
+git clone https://github.com/Crete-Valley/Crete_Valley_Data_Space_Connector_Deployment_and_Configuration_Guide.git
+cd "Crete Valley Connector Docker Files"
+```
+
+
 
 <img width="24" height="24" alt="image" src="https://github.com/user-attachments/assets/637a0907-246e-4300-be84-1d6136feb794" />   In this stage you need to make sure to put the <code style="color : #FF0000">.env</code> file (from the European Dynamics) in that folder. 
 
@@ -201,7 +213,8 @@ cd /crete-valley-connector/Crete Valley Connector Docker Files
 <img width="28" height="28" alt="image" src="https://github.com/user-attachments/assets/98bfc605-56a2-49a4-9948-f37e490b7a59" />   You need to connect in your local server through the <b>Command Prompt</b>, install Docker (the Docker application has to be downloaded and installed accordingly to the OS of the server to host the deployment) and the needed libraries as shown below:
 
 For the needed Libraries:
-  *For 64-bit version of CentOS type
+
+For 64-bit version of CentOS types:
 
 ```
 $ sudo yum update
@@ -210,25 +223,31 @@ $ sudo yum install curl
 $ sudo yum install -y yum-utils
 ```
     
-  *For 64-bit version of Ubuntu versions
+For 64-bit version of Ubuntu versions:
 
 ```
 $ sudo apt update
 $ sudo apt install -y ca-certificates
 $ sudo apt install -y curl
 $ sudo apt install -y software-properties-common
+\
 ```
-  or
+or
 ```
-$ sudo apt-get update
+$ sudo apt-get  update
 $ sudo apt-get install ca-certificates
-$ sudo apt-get curl 
-$ sudo apt-get software-properties-common 
+$ sudo apt-get install curl 
+$ sudo apt-get install software-properties-common
+$ sudo apt-get install gnupg-agent
 ```
 
 </br>
+</br>
+
 
 For the Docker:
+
+For 64-bit version of CentOS types:
 
 ```
 $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg
@@ -241,6 +260,26 @@ $ sudo yum install docker-ce docker-ce-cli containerd.io
 $ sudo systemctl start docker
 $ sudo systemctl enable docker
 ```
+
+For 64-bit version of Ubuntu versions:
+
+```
+$ sudo install -m 0755 -d /etc/apt/keyrings
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+$ sudo chmod a+r /etc/apt/keyrings/docker.gpg
+
+$ echo \
+  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+$ sudo apt-get update
+$ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+$ sudo systemctl start docker
+$ sudo systemctl enable docker
+```
+
 
 Maybe you will need to login to a docker account
 
