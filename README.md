@@ -194,7 +194,7 @@ For 64-bit version of CentOS types:
 mkdir crete-valley-connector
 cd crete-valley-connector
 git clone https://github.com/Crete-Valley/Crete_Valley_Data_Space_Connector_Deployment_and_Configuration_Guide.git
-cd Crete Valley Connector Docker Files
+cd "Crete Valley Connector Docker Files"
 ```
 
 For 64-bit version of Ubuntu versions:
